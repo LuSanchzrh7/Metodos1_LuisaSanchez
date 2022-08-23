@@ -1,6 +1,5 @@
 #!/bin/bash
-echo "escriba el numero N al que desea calcularle su factorial"
-read n
+n=20
 m=$(($n+1))
 facto=1
 function factorial(){
