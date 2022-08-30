@@ -33,6 +33,8 @@ def derivaday(f,x,y,h):
 def flujo(x,y):
     return (2*x)-((8*x)/((x**2)+(y**2))) #ecuacion simplificada
 
+
+#Dibujo Campo V
 Vx = np.zeros((N,N))
 Vy = np.zeros((N,N))
 
@@ -51,14 +53,16 @@ for i in range(1,len(x)):
     for j in range(1,len(y)):
         ax.quiver(x[i],y[j],Vx[i,j],Vy[i,j],color="#0833a2")
 
-num_segmentos = 300
-rad = 2
-cx = 0
-cy = 0
 
-angulo = np.linspace(0, 2*np.pi, num_segmentos+1)
-x_circ = rad * np.cos(angulo) + cx
-y_circ = rad * np.sin(angulo) + cy
+#dibujo circulo
+punt_circ = 300
+R = 2
+Orgx = 0
+Orgy = 0
+
+theta = np.linspace(0, 2*np.pi, punt_circ+1)
+x_circ = R * np.cos(theta) + Orgx
+y_circ = R * np.sin(theta) + Orgy
 ax.scatter(x_circ,y_circ,color="#f6b44c")
 plt.xlabel('x(cm)')
 plt.ylabel('y(cm)')
