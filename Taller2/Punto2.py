@@ -63,6 +63,6 @@ Orgy = 0
 theta = np.linspace(0, 2*np.pi, punt_circ+1)
 x_circ = R * np.cos(theta) + Orgx
 y_circ = R * np.sin(theta) + Orgy
-ax.scatter(x_circ,y_circ,color="#f6b44c")
+ax.scatter(x_circ,y_circ,color="#f6b44c",linewidth=0.000006)
 plt.xlabel('x(cm)')
 plt.ylabel('y(cm)')
